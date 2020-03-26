@@ -16,17 +16,39 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">  
 	</head>
 	<body>
-		<div class="message-background">
+		<section class="message-background showform-phone">
 			<div class="message-call">				
-				<div class="message">
-					<button class="message-close"><i class="fa fa-times-circle"></i></button>
-					<input type="text" class="name" placeholder="Имя Фамилия">
-					<input type="tel" class="phone-text" placeholder="Телефон">
-					<input type="email" class="e-mail" placeholder="Электронная почта">
-					<input type="submit" class="message-button" name="Отправить">
-				</div>
+				<form action="mail.php" name="message-phone" method="POST" class="message">
+					<!-- Скрытые поля для отправки данных -->
+					<input type="hidden" name="project_name" value="Дипломная работа">
+					<input type="hidden" name="admin_email" value="alexandrakot007@gmail.com">
+					<input type="hidden" name="form_subject" value="Позвоните мне">
+					<!-- END Скрытые поля для отправки данных -->
+
+					<button type="button" class="message-close"><i class="fa fa-times-circle"></i></button>
+					<input type="text" class="name" name="message-phone-name" placeholder="Ваше имя">
+					<input type="tel" class="phone-text" name="message-phone-tel" placeholder="Ваш телефон">
+					<div>
+						<input type="checkbox" id="agree-check" name="agree-check"><label for="agree-check">Я соглашаюсь на обработку моих персональных данных</label>
+					</div>
+					<button type="submit" class="message-button">Позвонить мне</button>
+				</form>
 			</div>
-		</div>
+		</section>
+		<section class="message-background showform-mail">
+			<div class="message-call">				
+				<form action="mail.php" name="message-mail" method="POST" class="message">
+					<button type="button" class="message-close"><i class="fa fa-times-circle"></i></button>
+					<input type="text" class="name" name="message-mail-name" placeholder="Ваше имя">
+					<input type="email" class="e-mail" name="message-mail-e-mail" placeholder="Ваша электронная почта">
+					<textarea class="message-text" cols="30" rows="5" name="message-mail-message" placeholder="Ваш вопрос"></textarea>
+					<div>
+						<input type="checkbox" id="agree-check"><label for="agree-check">Я соглашаюсь на обработку моих персональных данных</label>
+					</div>
+					<button type="submit" class="message-button">Отправить</button>
+				</form>
+			</div>
+		</section>
      	<header class="header">
             <div class="elements elements-top element1 anim">{ }</div>
             <div class="elements elements-top element2 anim">&lt;div&gt;</div>
@@ -61,7 +83,7 @@
                     </div>
                 </div>
      		</div>
-     	</header>
+		</header>
      	<main>
      		<div class="fixed-contaner contaner-mobile">
      			<h2 class="title-skill" id="servis">Что я делаю</h2>
@@ -144,6 +166,6 @@
      		<div class="bottom-line">
      				&copy; Дмитрий Алексеев, 2016 - 2018
             </div>
-     	</footer>
+		</footer>
     </body>
 </html>

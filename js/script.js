@@ -36,17 +36,54 @@ $(document).ready(function(){
 		menuNav.toggleClass("navigation-mobile");	
   })
 
+//Показать модальное окно для заказа звонка по телефону
   $(".button-first").click(function(){
-	$("html,body").toggleClass("fixed");
-	$(".message-background").toggleClass("show-message");
+	$(".showform-phone").fadeIn();
   })
+
+//Показать модальное окно для отправки сообщения с e-mail
+  $(".button-second").click(function(){
+	$(".showform-mail").fadeIn();
+  })
+
+
+//Закрыть модальное окно
   $(".message-close").click(function(){
 	$(".name").val("");
 	$(".phone-text").val("");
 	$(".e-mail").val("");
-	$("html,body").toggleClass("fixed");
-	$(".message-background").toggleClass("show-message");
+	$(".message-text").val("");
+	$(".message-background").fadeOut();
   })
+});
+
+//Закрыть модальное окно по клику вне окна
+$(document).mouseup(function (e) { 
+	var popup = $('.message-background');
+	if (e.target!=popup[0]&&popup.has(e.target).length === 0){
+		$('.message-background').fadeOut();
+	}
+});
+
+//Отправка данных методом POST на файл mail.php
+$(document).ready(function() {
+	//E-mail Ajax Send
+	$("form").submit(function() { //Change
+		var th = $(this);
+		$.ajax({
+			type: "POST",
+			url: "mail.php", //Change
+			data: th.serialize()
+		}).done(function() {
+			alert("Ваши данные получены!");
+			setTimeout(function() {
+				// Done Functions
+				th.trigger("reset");
+			}, 1000);
+		});
+		return false;
+	});
+
 });
 
 
