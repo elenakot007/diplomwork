@@ -409,6 +409,14 @@
 		margin: 26px 0 48px;
 	}
 
+	.message-call {
+		max-width: 95%;
+	}
+
+	.message input, .message textarea {
+		font-size: 15px;
+	}
+
 	.menu-mobile {
 		width: 25px;
 		height: 18px;

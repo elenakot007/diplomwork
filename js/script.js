@@ -41,6 +41,11 @@ $(document).ready(function(){
 	$(".showform-phone").fadeIn();
   })
 
+//Показать модальное окно для заказа звонка по телефону (мобильная версия)
+  $(".mobile-call").click(function(){
+	$(".showform-phone").fadeIn();
+  })
+
 //Показать модальное окно для отправки сообщения с e-mail
   $(".button-second").click(function(){
 	$(".showform-mail").fadeIn();
