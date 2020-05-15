@@ -1,171 +1,174 @@
 <!DOCTYPE html>
 <html lang="ru">
-	<head>
-		<meta charset="utf-8">
-		<title>Дипломная работа</title>
-		<link rel="stylesheet" type="text/css" href="styles.css">
-        <link rel="stylesheet" type="text/css" href="media.css">
-		<link rel="stylesheet" type="text/css" href="fonts.css">
-		<link href="fontawesome/css/all.css" rel="stylesheet">
-		<link href="favicon.png" rel="shortcut icon">
-        <script src ="js/jquery-3.4.1.min.js"></script>
-        <script src ="js/script.js"></script>
-        <script src ="OwlCarousel2-2.3.4/docs/assets/owlcarousel/owl.carousel.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.carousel.min.css">
-        <link rel="stylesheet" type="text/css" href="OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.theme.default.css">
-		<meta name="viewport" content="width=device-width, initial-scale=1">  
-	</head>
-	<body>
-		<section class="message-background showform-phone">
-			<div class="message-call">				
-				<form action="mail.php" name="message-phone" method="POST" class="message">
-					<!-- Скрытые поля для отправки данных -->
-					<input type="hidden" name="project_name" value="Дипломная работа">
-					<input type="hidden" name="admin_email" value="alexandrakot007@gmail.com">
-					<input type="hidden" name="form_subject" value="Позвоните мне">
-					<!-- END Скрытые поля для отправки данных -->
+<head>
+  <meta charset="utf-8">
+  <title>Дипломная работа</title>
+  <link rel="stylesheet" type="text/css" href="css/style.min.css">
+  <link href="fontawesome/css/all.min.css" rel="stylesheet">
+  <link href="favicon.png" rel="shortcut icon">
+  <script src="js/all.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
 
-					<button type="button" class="message-close"><i class="fa fa-times-circle"></i></button>
-					<input type="text" class="name" name="message-phone-name" placeholder="Ваше имя">
-					<input type="tel" class="phone-text" name="message-phone-tel" placeholder="Ваш телефон">
-					<div>
-						<input type="checkbox" id="agree-check" name="agree-check"><label for="agree-check">Я соглашаюсь на обработку моих персональных данных</label>
-					</div>
-					<button type="submit" class="message-button">Позвонить мне</button>
-				</form>
-			</div>
-		</section>
-		<section class="message-background showform-mail">
-			<div class="message-call">				
-				<form action="mail.php" name="message-mail" method="POST" class="message">
-					<button type="button" class="message-close"><i class="fa fa-times-circle"></i></button>
-					<input type="text" class="name" name="message-mail-name" placeholder="Ваше имя">
-					<input type="email" class="e-mail" name="message-mail-e-mail" placeholder="Ваша электронная почта">
-					<textarea class="message-text" cols="30" rows="5" name="message-mail-message" placeholder="Ваш вопрос"></textarea>
-					<div>
-						<input type="checkbox" id="agree-check"><label for="agree-check">Я соглашаюсь на обработку моих персональных данных</label>
-					</div>
-					<button type="submit" class="message-button">Отправить</button>
-				</form>
-			</div>
-		</section>
-     	<header class="header">
-            <div class="elements elements-top element1 anim">{ }</div>
-            <div class="elements elements-top element2 anim">&lt;div&gt;</div>
-            <div class="elements elements-top element3 anim">#</div>
-			<div class="elements elements-top element4 anim">&lt;/&gt;</div>
-			<div class="elements elements-top element5 anim">&lt;div&gt;</div>
-			<div class="elements elements-top element6 anim">&lt;/&gt;</div>
-     		<div class="fixed-contaner">
-     			<div class="top-contacts flex-contaner contaner-mobile">
-                    <button class="menu-mobile"></button>
-     				<nav class="navigation navigation-hover">
-     					<ul>
-     						<li><a href="#servis">Услуги</a></li>
-     						<li><a href="#portfolio">Портфолио</a></li>
-     						<li><a href="#prices">Стоимость</a></li>
-     					</ul>
-     				</nav>
-     				<div class="right-top-contact">
-     					<address class="phone-top contacts-hover"><a href="#">+7 (499) 995-95-95</a></address>
-     					<button class="button-first">Заказать звонок</button>
-                        <button class="mobile-call"></button>
-     				</div>
-     			</div>
-                <div class="flex-contaner autor">
-                    <div class="autor-text contaner-mobile">
-                        <h1 class="title">Дмитрий Алексеев</h1>
-                        <div class="description">Frontend-разработчик и веб-верстальщик</div>
-                        <button class="button-second button-margin">Узнать больше</button>
-                    </div>
-                    <div class="ellipse">
-						<img src="img/logo-foto.png" alt="Фото">
-                    </div>
-                </div>
-     		</div>
-		</header>
-     	<main>
-     		<div class="fixed-contaner contaner-mobile">
-     			<h2 class="title-skill" id="servis">Что я делаю</h2>
-     			<ul class="skills">
-     				<li>
-     					<img src="img/icon-tools.png" alt="">
-     					<div class="skills-list">Верстка лендинг-страниц и сайтов любой сложности</div>
-     				</li>
-     				<li>
-     					<img src="img/icon-responsive.png" alt="">
-     					<div class="skills-list">Адаптивная верстка под все броузеры и устройства</div>
-     				</li>
-     				<li>
-     					<img src="img/icon-programming.png" alt="">
-     					<div class="skills-list">Frontend-разработка и программирование</div>
-     				</li>
-     				<li>
-	     				<img src="img/icon-coding.png" alt="">
-    	 				<div class="skills-list">Исправление и доработка существующей верстки</div>
-     				</li>
-     			</ul>
-     			<div class="button-center"><button class="button-second">Узнать больше</button></div>
-                <h2 class="title-examples" id="portfolio">Примеры моих работ</h2>
-                <div class="position-relative">
-                    <button class="arrow position-absolute arrow-start"></button>
-                    <button class="arrow position-absolute arrow-end"></button>
-                    <div class="examples owl-carousel owl-theme">
-                       	<div>
-                            <img src="img/icon-site1.png" alt="Сайт психолога Веры Антоновой">
-                            <div class="examples-list">Сайт психолога Веры Антоновой</div>
-                       	</div>
-                       	<div>
-                            <img src="img/icon-site2.png" alt="Сайт магазина детской одежды">
-                            <div class="examples-list">Сайт магазина детской одежды</div>
-                       	</div>
-                       	<div>
-                            <img src="img/icon-site3.png" alt="Сайт магазина рыболов">
-                            <div class="examples-list">Сайт магазина рыболов</div>
-                       	</div>                         
-                    </div>
-                </div>       
-     			<div class="button-center order-button"><button class="button-second">Заказать проект</button></div>
-            </div>
-     		<div class="price" id="prices">
-                <div class="elements elements-bottom element7">{ }</div>
-                <div class="elements elements-bottom element8">#</div>
-                <div class="elements elements-bottom element9">&lt;/&gt;</div>
-                <div class="elements elements-bottom element10">&lt;div&gt;</div>
-				<div class="elements elements-bottom element11">{ }</div>                        
-     			<div class="fixed-contaner contaner-mobile">
-     				<div class="title-price">Адаптивная верстка под все устройства и&nbsp;броузеры от 1000 рублей всего за 4 часа.*</div>
-     				<div class="description-price">* Срок и стоимость могут отличаться от заявленных и рассчитываются индивидуально,<br>в зависимости от сложности задач.</div>
-     			</div>
-     	    </div>
-     	</main>
-     	<footer>
-            <div class="fixed-contaner flex-contaner footer contaner-mobile">
-				<nav class="navigation-footer navigation-hover">
-					<ul>
-						<li><a href="#servis">Услуги</a></li>
-						<li><a href="#portfolio">Портфолио</a></li>
-						<li><a href="#prices">Стоимость</a></li>
-					</ul>
-				</nav>
-                <address>
-                    <div class="addres-bottom contacts-hover"><i class="fas fa-phone-alt icon"></i><a href="#">+7 (499) 995-95-95</a></div>
-                    <div class="addres-bottom contacts-hover"><i class="fas fa-envelope icon"></i><a href="#">dmitry@alekseev.com</a></div>
-                </address>
-                <button class="last-button button-second button-margin">Заказать звонок</button>
-                <div class="footer-right-side">
-                    <button class="button-first button-footer">Заказать звонок</button>
-                    <div class="social-buttons">
-     				    <a href="#" class="vk social-buttons-margin"></a>
-     				    <a href="#" class="fb social-buttons-margin"></a>
-     				    <a href="#" class="twitter social-buttons-margin"></a>
-     				    <a href="#" class="inst"></a>
-                   	</div>
-                </div>
-			</div>		
-     		<div class="bottom-line">
-     				&copy; Дмитрий Алексеев, 2016 - 2018
-            </div>
-		</footer>
-    </body>
+<body>
+  <section class="popup-message showform-phone">
+    <div class="popup-message_position">
+      <form action="mail.php" name="message-phone" method="POST" class="popup-message__form">
+        <!-- Скрытые поля для отправки данных -->
+        <input type="hidden" name="project_name" value="Дипломная работа">
+        <input type="hidden" name="admin_email" value="alexandrakot007@gmail.com">
+        <input type="hidden" name="form_subject" value="Позвоните мне">
+        <!-- END Скрытые поля для отправки данных -->
+
+        <button type="button" class="popup-message__close-button" aria-label="close"><i class="fa fa-times-circle"></i></button>
+        <input type="text" class="popup-message__name-input" name="message-phone-name" placeholder="Ваше имя">
+        <input type="tel" class="popup-message__phone-input" name="message-phone-tel" placeholder="Ваш телефон">
+        <div>
+          <input type="checkbox" id="agree-check-phone" name="agree-check-phone"><label for="agree-check-phone">Я
+            соглашаюсь на обработку моих персональных данных</label>
+        </div>
+        <button type="submit" class="popup-message__submit-button">Позвонить мне</button>
+      </form>
+    </div>
+  </section>
+  <section class="popup-message showform-mail">
+    <div class="popup-message_position">
+      <form action="mail.php" name="message-mail" method="POST" class="popup-message__form">
+        <button type="button" class="popup-message__close-button" aria-label="close"><i class="fa fa-times-circle"></i></button>
+        <input type="text" class="popup-message__name-input" name="message-mail-name" placeholder="Ваше имя">
+        <input type="email" class="popup-message__mail-input" name="message-mail-e-mail" placeholder="Ваша электронная почта">
+        <textarea class="popup-message__text-input" cols="30" rows="5" name="message-mail-message"
+          placeholder="Ваш вопрос"></textarea>
+        <div>
+          <input type="checkbox" id="agree-check-mail" name="agree-check-mail"><label for="agree-check-mail">Я
+            соглашаюсь на обработку моих персональных данных</label>
+        </div>
+        <button type="submit" class="popup-message__submit-button">Отправить</button>
+      </form>
+    </div>
+  </section>
+  <header class="header">
+    <div class="elements header_elements-top header__element1 anim">{ }</div>
+    <div class="elements header_elements-top header__element2 anim">&lt;div&gt;</div>
+    <div class="elements header_elements-top header__element3 anim">#</div>
+    <div class="elements header_elements-top header__element4 anim">&lt;/&gt;</div>
+    <div class="elements header_elements-top header__element5 anim">&lt;div&gt;</div>
+    <div class="elements header_elements-top header__element6 anim">&lt;/&gt;</div>
+    <div class="fixed-contaner">
+      <div class="top-contacts flex-contaner contaner-mobile">
+        <button class="top-contacts__menu-mobile"></button>
+        <nav class="top-contacts__navigation navigation-hover">
+          <ul>
+            <li><a href="#servis">Услуги</a></li>
+            <li><a href="#portfolio">Портфолио</a></li>
+            <li><a href="#prices">Стоимость</a></li>
+          </ul>
+        </nav>
+        <div class="top-contacts_right">
+          <address class="top-contacts__phone contacts-hover"><a href="#">+7 (499) 995-95-95</a></address>
+          <button class="button-call">Заказать звонок</button>
+          <button class="mobile-call"></button>
+        </div>
+      </div>
+      <div class="header__autor flex-contaner">
+        <div class="header__autor-text contaner-mobile">
+          <h1>Дмитрий Алексеев</h1>
+          <div class="header__autor-description">Frontend-разработчик и веб-верстальщик</div>
+          <button class="button-message button-margin">Узнать больше</button>
+        </div>
+        <div class="header__ellipse">
+          <img src="img/logo-foto_1.png" alt="Фото">
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="fixed-contaner contaner-mobile">
+      <h2 class="skills__title" id="servis">Что я делаю</h2>
+      <ul class="skills__list">
+        <li>
+          <img src="img/icon-tools.png" alt="">
+          <div class="skills__item">Верстка лендинг-страниц и сайтов любой сложности</div>
+        </li>
+        <li>
+          <img src="img/icon-responsive.png" alt="">
+          <div class="skills__item">Адаптивная верстка под все броузеры и устройства</div>
+        </li>
+        <li>
+          <img src="img/icon-programming.png" alt="">
+          <div class="skills__item">Frontend-разработка и программирование</div>
+        </li>
+        <li>
+          <img src="img/icon-coding.png" alt="">
+          <div class="skills__item">Исправление и доработка существующей верстки</div>
+        </li>
+      </ul>
+      <div class="button-center"><button class="button-message">Узнать больше</button></div>
+      <h2 class="examples__title" id="portfolio">Примеры моих работ</h2>
+      <div class="examples_position-relative">
+        <button class="examples__arrow-start arrow position-absolute"></button>
+        <button class="examples__arrow-end arrow position-absolute"></button>
+        <div class="owl-carousel owl-theme">
+          <div>
+            <img src="img/icon-site1.jpg" alt="Сайт психолога Веры Антоновой">
+            <div class="examples__item">Сайт психолога Веры Антоновой</div>
+          </div>
+          <div>
+            <img src="img/icon-site2.jpg" alt="Сайт магазина детской одежды">
+            <div class="examples__item">Сайт магазина детской одежды</div>
+          </div>
+          <div>
+            <img src="img/icon-site3.jpg" alt="Сайт магазина рыболов">
+            <div class="examples__item">Сайт магазина рыболов</div>
+          </div>
+        </div>
+      </div>
+      <div class="button-center order-button"><button class="button-message">Заказать проект</button></div>
+    </div>
+    <div class="price" id="prices">
+      <div class="elements price_elements-bottom prices__element1">{ }</div>
+      <div class="elements price_elements-bottom prices__element2">#</div>
+      <div class="elements price_elements-bottom prices__element3">&lt;/&gt;</div>
+      <div class="elements price_elements-bottom prices__element4">&lt;div&gt;</div>
+      <div class="elements price_elements-bottom prices__element5">{ }</div>
+      <div class="fixed-contaner contaner-mobile">
+        <div class="price__title">Адаптивная верстка под все устройства и&nbsp;броузеры от 1000 рублей всего за 4 часа.*
+        </div>
+        <div class="price__description">* Срок и стоимость могут отличаться от заявленных и рассчитываются
+          индивидуально,<br>в зависимости от сложности задач.</div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer fixed-contaner flex-contaner contaner-mobile">
+      <nav class="footer__navigation navigation-hover">
+        <ul>
+          <li><a href="#servis">Услуги</a></li>
+          <li><a href="#portfolio">Портфолио</a></li>
+          <li><a href="#prices">Стоимость</a></li>
+        </ul>
+      </nav>
+      <address>
+        <div class="addres__bottom contacts-hover"><i class="fas fa-phone-alt icon"></i><a href="#">+7 (499)
+            995-95-95</a></div>
+        <div class="addres__bottom contacts-hover"><i class="fas fa-envelope icon"></i><a
+            href="#">dmitry@alekseev.com</a></div>
+      </address>
+      <button class="button-message last-button button-margin">Заказать звонок</button>
+      <div class="footer_right-side">
+        <button class="button-call button-footer">Заказать звонок</button>
+        <div class="footer__social-buttons">
+          <a href="#" class="footer__vk social-buttons-margin"></a>
+          <a href="#" class="footer__fb social-buttons-margin"></a>
+          <a href="#" class="footer__twitter social-buttons-margin"></a>
+          <a href="#" class="footer__inst"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom-line">
+      &copy; Дмитрий Алексеев, 2016 - 2018
+    </div>
+  </footer>
+</body>
+
 </html>
