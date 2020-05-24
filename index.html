@@ -3,10 +3,11 @@
 <head>
   <meta charset="utf-8">
   <title>Дипломная работа</title>
+  <link rel="preload" href="fonts/roboto-v20-latin_cyrillic-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/roboto-v20-latin_cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" type="text/css" href="css/style.min.css">
   <link href="fontawesome/css/all.min.css" rel="stylesheet">
   <link href="favicon.png" rel="shortcut icon">
-  <script src="js/all.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
@@ -56,7 +57,7 @@
     <div class="elements header_elements-top header__element6 anim">&lt;/&gt;</div>
     <div class="fixed-contaner">
       <div class="top-contacts flex-contaner contaner-mobile">
-        <button class="top-contacts__menu-mobile"></button>
+        <button class="top-contacts__menu-mobile" aria-label="mobilemenu-button"></button>
         <nav class="top-contacts__navigation navigation-hover">
           <ul>
             <li><a href="#servis">Услуги</a></li>
@@ -67,7 +68,7 @@
         <div class="top-contacts_right">
           <address class="top-contacts__phone contacts-hover"><a href="#">+7 (499) 995-95-95</a></address>
           <button class="button-call">Заказать звонок</button>
-          <button class="mobile-call"></button>
+          <button class="mobile-call" aria-label="mobilecall-button"></button>
         </div>
       </div>
       <div class="header__autor flex-contaner">
@@ -106,8 +107,8 @@
       <div class="button-center"><button class="button-message">Узнать больше</button></div>
       <h2 class="examples__title" id="portfolio">Примеры моих работ</h2>
       <div class="examples_position-relative">
-        <button class="examples__arrow-start arrow position-absolute"></button>
-        <button class="examples__arrow-end arrow position-absolute"></button>
+        <button class="examples__arrow-start arrow position-absolute" aria-label="first-arrow"></button>
+        <button class="examples__arrow-end arrow position-absolute" aria-label="last-arrow"></button>
         <div class="owl-carousel owl-theme">
           <div>
             <img src="img/icon-site1.jpg" alt="Сайт психолога Веры Антоновой">
@@ -158,10 +159,10 @@
       <div class="footer_right-side">
         <button class="button-call button-footer">Заказать звонок</button>
         <div class="footer__social-buttons">
-          <a href="#" class="footer__vk social-buttons-margin"></a>
-          <a href="#" class="footer__fb social-buttons-margin"></a>
-          <a href="#" class="footer__twitter social-buttons-margin"></a>
-          <a href="#" class="footer__inst"></a>
+          <a href="#" class="footer__vk social-buttons-margin" aria-label="vk-button"></a>
+          <a href="#" class="footer__fb social-buttons-margin" aria-label="fb-button"></a>
+          <a href="#" class="footer__twitter social-buttons-margin" aria-label="twitter-button"></a>
+          <a href="#" class="footer__inst" aria-label="inst-button"></a>
         </div>
       </div>
     </div>
@@ -169,6 +170,6 @@
       &copy; Дмитрий Алексеев, 2016 - 2018
     </div>
   </footer>
+  <script src="js/all.js"></script>
 </body>
-
 </html>
