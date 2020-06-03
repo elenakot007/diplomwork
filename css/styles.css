@@ -107,6 +107,7 @@ address {
 .popup-message__submit-button:active {
 	outline: none;
 	background-color: #f39;
+	transition: all 0.5s ease;
 }
 
 .popup-message__form input:hover,
@@ -134,6 +135,7 @@ address {
 .popup-message__close-button:active {
 	outline: none;
 	color: #f39;
+	transition: all 0.5s ease;
 }
 
 .elements {
@@ -217,10 +219,12 @@ address {
 .navigation-hover a:hover {
 	color: #f66;
 	border-bottom: 1px solid #f66;
+	transition: all 0.5s ease;
 }
 
 .contacts-hover a:hover {
 	color: #f66;
+	transition: all 0.5s ease;
 }
 
 .top-contacts_right {
@@ -252,6 +256,7 @@ address {
 .button-call:hover {
 	background-color: #ff6633;
 	color: #fff;
+	transition: all 0.5s ease;
 }
 
 .mobile-call {
@@ -288,7 +293,7 @@ address {
 
 .button-message:hover {
 	background-color: #f39;
-	border: solid 1px rgb(119, 30, 30);
+	transition: all 0.5s ease;
 }
 
 .button-margin {
@@ -360,6 +365,7 @@ address {
 .arrow:hover {
 	box-shadow: 0 0 5px 1px #666;
 	opacity: 1;
+	transition: all 0.5s ease;
 }
 
 .examples__arrow-start {
@@ -424,6 +430,7 @@ address {
 
 .price__description {
 	padding: 0 0 80px 128px;
+	margin-right: 300px;
 	font-size: 18px;
 	line-height: 30px;
 }
@@ -518,6 +525,7 @@ address {
 
 .footer__social-buttons a:hover {
 	opacity: 0.6;
+	transition: all 0.5s ease;
 }
 
 .footer__bottom-line {

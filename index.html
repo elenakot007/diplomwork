@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <title>Дипломная работа</title>
+  <title>Дмитрий Алексеев - Frontend-разработчик и веб-верстальщик</title>
   <link rel="preload" href="fonts/roboto-v20-latin_cyrillic-700.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/roboto-v20-latin_cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" type="text/css" href="css/style.min.css">
@@ -10,44 +10,7 @@
   <link href="favicon.png" rel="shortcut icon">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-
 <body>
-  <section class="popup-message showform-phone">
-    <div class="popup-message_position">
-      <form action="mail.php" name="message-phone" method="POST" class="popup-message__form">
-        <!-- Скрытые поля для отправки данных -->
-        <input type="hidden" name="project_name" value="Дипломная работа">
-        <input type="hidden" name="admin_email" value="alexandrakot007@gmail.com">
-        <input type="hidden" name="form_subject" value="Позвоните мне">
-        <!-- END Скрытые поля для отправки данных -->
-
-        <button type="button" class="popup-message__close-button" aria-label="close"><i class="fa fa-times-circle"></i></button>
-        <input type="text" class="popup-message__name-input" name="message-phone-name" placeholder="Ваше имя">
-        <input type="tel" class="popup-message__phone-input" name="message-phone-tel" placeholder="Ваш телефон">
-        <div>
-          <input type="checkbox" id="agree-check-phone" name="agree-check-phone"><label for="agree-check-phone">Я
-            соглашаюсь на обработку моих персональных данных</label>
-        </div>
-        <button type="submit" class="popup-message__submit-button">Позвонить мне</button>
-      </form>
-    </div>
-  </section>
-  <section class="popup-message showform-mail">
-    <div class="popup-message_position">
-      <form action="mail.php" name="message-mail" method="POST" class="popup-message__form">
-        <button type="button" class="popup-message__close-button" aria-label="close"><i class="fa fa-times-circle"></i></button>
-        <input type="text" class="popup-message__name-input" name="message-mail-name" placeholder="Ваше имя">
-        <input type="email" class="popup-message__mail-input" name="message-mail-e-mail" placeholder="Ваша электронная почта">
-        <textarea class="popup-message__text-input" cols="30" rows="5" name="message-mail-message"
-          placeholder="Ваш вопрос"></textarea>
-        <div>
-          <input type="checkbox" id="agree-check-mail" name="agree-check-mail"><label for="agree-check-mail">Я
-            соглашаюсь на обработку моих персональных данных</label>
-        </div>
-        <button type="submit" class="popup-message__submit-button">Отправить</button>
-      </form>
-    </div>
-  </section>
   <header class="header">
     <div class="elements header_elements-top header__element1 anim">{ }</div>
     <div class="elements header_elements-top header__element2 anim">&lt;div&gt;</div>
@@ -136,7 +99,7 @@
         <div class="price__title">Адаптивная верстка под все устройства и&nbsp;броузеры от 1000 рублей всего за 4 часа.*
         </div>
         <div class="price__description">* Срок и стоимость могут отличаться от заявленных и рассчитываются
-          индивидуально,<br>в зависимости от сложности задач.</div>
+          индивидуально, в зависимости от сложности задач.</div>
       </div>
     </div>
   </main>
@@ -170,6 +133,42 @@
       &copy; Дмитрий Алексеев, 2016 - 2018
     </div>
   </footer>
+  <div class="popup-message showform-phone">
+    <div class="popup-message_position">
+      <form action="mail.php" name="message-phone" method="POST" class="popup-message__form">
+        <!-- Скрытые поля для отправки данных -->
+        <input type="hidden" name="project_name" value="Дипломная работа">
+        <input type="hidden" name="admin_email" value="alexandrakot007@gmail.com">
+        <input type="hidden" name="form_subject" value="Позвоните мне">
+        <!-- END Скрытые поля для отправки данных -->
+
+        <button type="button" class="popup-message__close-button" aria-label="close"><i class="fa fa-times-circle"></i></button>
+        <input type="text" class="popup-message__name-input" name="message-phone-name" placeholder="Ваше имя">
+        <input type="tel" class="popup-message__phone-input" name="message-phone-tel" placeholder="Ваш телефон">
+        <div>
+          <input type="checkbox" id="agree-check-phone" name="agree-check-phone"><label for="agree-check-phone">Я
+            соглашаюсь на обработку моих персональных данных</label>
+        </div>
+        <button type="submit" class="popup-message__submit-button">Позвонить мне</button>
+      </form>
+    </div>
+  </div>
+  <div class="popup-message showform-mail">
+    <div class="popup-message_position">
+      <form action="mail.php" name="message-mail" method="POST" class="popup-message__form">
+        <button type="button" class="popup-message__close-button" aria-label="close"><i class="fa fa-times-circle"></i></button>
+        <input type="text" class="popup-message__name-input" name="message-mail-name" placeholder="Ваше имя">
+        <input type="email" class="popup-message__mail-input" name="message-mail-e-mail" placeholder="Ваша электронная почта">
+        <textarea class="popup-message__text-input" cols="30" rows="5" name="message-mail-message"
+          placeholder="Ваш вопрос"></textarea>
+        <div>
+          <input type="checkbox" id="agree-check-mail" name="agree-check-mail"><label for="agree-check-mail">Я
+            соглашаюсь на обработку моих персональных данных</label>
+        </div>
+        <button type="submit" class="popup-message__submit-button">Отправить</button>
+      </form>
+    </div>
+  </div>
   <script src="js/all.js"></script>
 </body>
 </html>

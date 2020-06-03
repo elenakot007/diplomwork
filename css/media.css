@@ -14,7 +14,7 @@
 
 @media (max-width: 1730px){
 	.header__element3 {
-		transform: translateX(245px) translateY(510px) rotate(15deg);
+		transform: translateX(245px) translateY(560px) rotate(15deg);
 		font-size: 52px;
 	}
 }
@@ -37,6 +37,10 @@
 
 	.arrow {
 		display: none;
+	}
+
+	.price__description {
+		margin-right: 272px;
 	}
 }
 
@@ -178,6 +182,7 @@
 
 	.price__description {
 		padding: 0 0 78px;
+		margin-right: 0;
 		font-size: 18px;
 		line-height: 30px;
 	}
